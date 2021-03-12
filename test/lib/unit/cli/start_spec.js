@@ -18,7 +18,7 @@ describe('start', () => {
     servicesCacheMock = sinon.stub().returns({cache: 'middleware'});
     servicesCli = proxyquire('../../../../cli/services', {
       '../lib/services': servicesMock,
-      '@labshare/services-cache': {Middleware: servicesCacheMock}
+      '@niaid/services-cache': {Middleware: servicesCacheMock}
     });
   });
 

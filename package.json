@@ -1,13 +1,13 @@
 {
-  "name": "@labshare/services",
+  "name": "@niaid/services",
   "namespace": "services",
   "main": "./",
   "version": "4.10.4",
-  "description": "LabShare API service manager",
-  "contributors": "https://github.com/LabShare/services/graphs/contributors",
+  "description": "NIAID Hedwig (formerly LabShare) API service manager",
+  "contributors": "https://github.com/niaid/services/graphs/contributors",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LabShare/services.git"
+    "url": "https://github.com/niaid/services.git"
   },
   "scripts": {
     "build": "lb-tsc",
@@ -20,7 +20,7 @@
     "semantic-release": "semantic-release"
   },
   "bugs": {
-    "url": "https://github.com/LabShare/services/issues"
+    "url": "https://github.com/niaid/services/issues"
   },
   "license": "MIT",
   "nyc": {
@@ -34,11 +34,11 @@
     ]
   },
   "dependencies": {
-    "@labshare/services-auth": "^3.3.0",
-    "@labshare/services-cache": "^1.19.0",
-    "@labshare/services-health": "^1.0.5",
-    "@labshare/services-logger": "^1.1.6",
-    "@labshare/services-notifications": "^1.0.3",
+    "@niaid/services-auth": "^3.3.0",
+    "@niaid/services-cache": "^1.19.0",
+    "@niaid/services-health": "^1.0.5",
+    "@niaid/services-logger": "^1.1.6",
+    "@niaid/services-notifications": "^1.0.3",
     "@loopback/boot": "^1.5.12",
     "@loopback/context": "^1.24.0",
     "@loopback/core": "^1.11.0",

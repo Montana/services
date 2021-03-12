@@ -6,9 +6,9 @@ import {RestApplication} from '@loopback/rest';
 import {join} from 'path';
 import {LabShareSequence} from './sequence';
 import {LegacyLoaderComponent} from './legacy-loader.component';
-import {HealthComponent} from '@labshare/services-health';
-import {ServicesLoggerComponent} from '@labshare/services-logger';
-import {LbServicesAuthComponent, AuthenticationBindings} from '@labshare/services-auth';
+import {HealthComponent} from '@niaid/services-health';
+import {ServicesLoggerComponent} from '@niaid/services-logger';
+import {LbServicesAuthComponent, AuthenticationBindings} from '@niaid/services-auth';
 
 export class LoopbackProxyApplication extends BootMixin(RepositoryMixin(RestApplication)) {
   constructor(options: ApplicationConfig = {}) {

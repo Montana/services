@@ -13,7 +13,7 @@ import * as util from 'util';
 import * as resolve from 'resolve-pkg';
 import * as VError from 'verror';
 import {createVersionsController} from './versions.controller';
-import {AUTHENTICATION_METADATA_KEY, AuthenticationMetadata} from '@labshare/services-auth';
+import {AUTHENTICATION_METADATA_KEY, AuthenticationMetadata} from '@niaid/services-auth';
 
 const {getPackageDependencies, getPackageName, getPackageManifest , getPackageLscSettings}  = require('../api/utils');
 const METHODS_KEY = MetadataAccessor.create<Injection, MethodDecorator>('inject:methods');

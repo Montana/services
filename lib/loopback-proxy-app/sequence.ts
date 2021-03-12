@@ -15,11 +15,11 @@ import {
   Send,
   SequenceHandler
 } from '@loopback/rest';
-import {LabShareLogger, LogBindings} from '@labshare/services-logger';
-import {AuthenticateFn, AuthenticationBindings, getAuthenticateMetadata} from '@labshare/services-auth';
-import {RequestWithUserInfo} from '@labshare/services-auth/dist/src/providers';
+import {LabShareLogger, LogBindings} from '@niaid/services-logger';
+import {AuthenticateFn, AuthenticationBindings, getAuthenticateMetadata} from '@niaid/services-auth';
+import {RequestWithUserInfo} from '@niaid/services-auth/dist/src/providers';
 import {MetadataInspector} from '@loopback/context';
-import {AUTHENTICATION_METADATA_KEY, AuthenticationMetadata} from '@labshare/services-auth';
+import {AUTHENTICATION_METADATA_KEY, AuthenticationMetadata} from '@niaid/services-auth';
 
 const SequenceActions = RestBindings.SequenceActions;
 
