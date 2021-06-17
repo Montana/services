@@ -2,7 +2,7 @@
   "name": "@niaid/services",
   "namespace": "services",
   "main": "./",
-  "version": "4.10.4",
+  "version": "4.10.5",
   "description": "NIAID Hedwig (formerly LabShare) API service manager",
   "contributors": "https://github.com/niaid/services/graphs/contributors",
   "repository": {
@@ -34,11 +34,6 @@
     ]
   },
   "dependencies": {
-    "@niaid/services-auth": "^3.3.0",
-    "@niaid/services-cache": "^1.19.0",
-    "@niaid/services-health": "^1.0.5",
-    "@niaid/services-logger": "^1.1.6",
-    "@niaid/services-notifications": "^1.0.3",
     "@loopback/boot": "^1.5.12",
     "@loopback/context": "^1.24.0",
     "@loopback/core": "^1.11.0",
@@ -47,6 +42,11 @@
     "@loopback/rest": "^1.24.0",
     "@loopback/rest-explorer": "^1.4.5",
     "@loopback/service-proxy": "^1.3.12",
+    "@niaid/services-auth": "^3.4.3",
+    "@niaid/services-cache": "^1.19.0",
+    "@niaid/services-health": "^1.0.5",
+    "@niaid/services-logger": "^1.1.6",
+    "@niaid/services-notifications": "^1.0.3",
     "@types/jasmine": "^3.5.2",
     "async": "^2.1.4",
     "body-parser": "^1.18.3",
