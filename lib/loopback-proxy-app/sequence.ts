@@ -34,7 +34,8 @@ export class LabShareSequence implements SequenceHandler {
     @inject(LogBindings.LOGGER) protected logger: LabShareLogger,
     @inject(AuthenticationBindings.AUTH_ACTION) protected authenticateRequest: AuthenticateFn,
     @inject(AuthenticationBindings.USER_INFO_ACTION) protected setUserInfo: AuthenticateFn,
-    @inject(CoreBindings.APPLICATION_CONFIG) protected config: ApplicationConfig
+    @inject(CoreBindings.APPLICATION_CONFIG) protected config: ApplicationConfig,
+    @inject("errorHook") protected errorHook: (error:any) => void
   ) {}
 
   async handle(context: RequestContext) {
@@ -74,6 +75,7 @@ export class LabShareSequence implements SequenceHandler {
       this.logger.error(request.url, error.stack, {
         url: request.url
       });
+      this.errorHook(error);
       this.reject(context, error);
     }
   }
